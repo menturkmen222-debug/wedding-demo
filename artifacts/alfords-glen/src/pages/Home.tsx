@@ -104,7 +104,7 @@ export function Home() {
           <div className="h-[500px] lg:h-auto w-full relative">
             <img 
               src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1920" 
-              alt="Beautiful wedding setup" 
+              alt="Alford's Glen Wedding Barn" 
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover"
             />

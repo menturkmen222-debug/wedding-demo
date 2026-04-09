@@ -5,16 +5,16 @@ import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
 export function Gallery() {
   const images = [
-    { src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1280", category: "Ceremonies" },
-    { src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1280", category: "Ceremonies" },
-    { src: "https://images.unsplash.com/photo-1529636798458-92182e662485?w=1280", category: "All" }, // Couple
-    { src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1280", category: "Ceremonies" },
-    { src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1280", category: "Receptions" },
-    { src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1280", category: "Receptions" },
-    { src: "https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?w=1280", category: "Decor" },
-    { src: "https://images.unsplash.com/photo-1510076857177-7470076d4098?w=1280", category: "Flowers" },
-    { src: "https://images.unsplash.com/photo-1547637589-f54c34f5d7a4?w=1280", category: "Desserts" },
-    { src: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=1280", category: "Flowers" }
+    { src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1280", category: "Ceremonies", alt: "Wedding ceremony" },
+    { src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1280", category: "Ceremonies", alt: "Barn exterior" },
+    { src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1280", category: "Ceremonies", alt: "Outdoor ceremony" },
+    { src: "https://images.unsplash.com/photo-1547637589-f54c34f5d7a4?w=1280", category: "Desserts", alt: "Wedding cake" },
+    { src: "https://images.unsplash.com/photo-1510076857177-7470076d4098?w=1280", category: "Flowers", alt: "Floral decor" },
+    { src: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=1280", category: "Flowers", alt: "Floral arrangement" },
+    { src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1280", category: "Receptions", alt: "Reception table setting" },
+    { src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1280", category: "Receptions", alt: "Reception night lights" },
+    { src: "https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?w=1280", category: "Decor", alt: "Rustic decor details" },
+    { src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1280", category: "Ceremonies", alt: "Outdoor ceremony" },
   ];
 
   const [filter, setFilter] = useState("All");
@@ -94,7 +94,7 @@ export function Gallery() {
               >
                 <img 
                   src={img.src} 
-                  alt={`Gallery image ${i}`} 
+                  alt={img.alt ?? `Gallery image ${i}`} 
                   loading="lazy" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
                 />
