@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd ../.. && pnpm --filter @workspace/alfords-glen run build",
+  "outputDirectory": "dist/public",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "env": {
+    "BASE_PATH": "/"
+  }
+}
