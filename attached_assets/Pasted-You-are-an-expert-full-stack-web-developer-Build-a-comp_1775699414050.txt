@@ -1,0 +1,308 @@
+You are an expert full-stack web developer. Build a complete, stunning, production-ready wedding venue website from scratch using HTML, CSS, and JavaScript (single repo, no frameworks needed — pure vanilla or optionally Vite + vanilla JS).
+
+---
+
+## 🏷️ PROJECT NAME
+**Alford's Glen Wedding Barn** — Premium Wedding Venue Website
+
+---
+
+## 🎯 GOAL
+Create a visually breathtaking, fully responsive, multi-page wedding venue website for an American rustic-elegant barn wedding venue. The site must look like a $5,000+ professionally designed website — not a template. Every section must feel curated, warm, and luxurious.
+
+---
+
+## 🗂️ PAGES & STRUCTURE
+
+Create the following pages (either as separate HTML files or Single Page App with JS routing):
+
+1. **index.html** — Home (Hero + Overview)
+2. **rental.html** — Rental Information & Pricing
+3. **vendors.html** — Preferred Vendors
+4. **gallery.html** — Photo Gallery (Desserts / Decor / Flowers tabs)
+5. **couples.html** — Alford's Glen Couples (testimonials & real wedding stories)
+6. **history.html** — History of the Property
+7. **contact.html** — Contact / Inquiry Form
+
+---
+
+## 🎨 DESIGN SYSTEM
+
+### Color Palette:
+- **Primary:** Warm Ivory `#FAF6F0`
+- **Accent Gold:** `#C9A96E`
+- **Deep Forest Green:** `#2D4A3E`
+- **Soft Blush:** `#F2D5C4`
+- **Dark Charcoal (text):** `#2C2C2C`
+- **White:** `#FFFFFF`
+
+### Typography:
+- **Headings:** Google Font — `"Playfair Display"` (serif, elegant)
+- **Body:** Google Font — `"Lato"` or `"Nunito"` (clean, readable)
+- **Accent/Script:** Google Font — `"Great Vibes"` (for decorative script text)
+
+### Visual Style:
+- Rustic-elegant barn aesthetic
+- Full-width cinematic hero sections with overlay gradients
+- Soft shadows, rounded cards, subtle hover animations
+- Floral/botanical SVG decorative dividers between sections
+- Parallax scrolling effects on hero images
+- Thin gold borders and decorative lines as accents
+- Consistent warm, golden-hour photography feel
+
+---
+
+## 📄 PAGE-BY-PAGE CONTENT
+
+### 1. HOME PAGE (index.html)
+
+**Sticky Navigation Bar:**
+- Logo: "Alford's Glen" in Great Vibes script + "Wedding Barn" subtitle
+- Links: Home | Rental Info | Vendors | Gallery | Our Couples | History | Contact
+- CTA button: "Check Availability" (gold, pill-shaped)
+- Transparent on top, solid ivory on scroll
+
+**Hero Section:**
+- Full-screen background: Use high-quality free Unsplash image of a rustic barn wedding (use direct Unsplash URL: https://images.unsplash.com/photo-1519741497674-611481863552?w=1920)
+- Dark gradient overlay (bottom-to-top)
+- Centered text:
+  - Script: "Where Love Stories Begin"
+  - H1: "Alford's Glen Wedding Barn"
+  - Subtext: "50 Wooded Acres of Rustic Elegance in Garrettsville, Ohio"
+  - Two CTA buttons: [Schedule a Tour] [View Gallery]
+
+**About Snapshot (3 icon cards):**
+- 🌲 "50 Wooded Acres" — Surrounded by nature
+- 🏚️ "Rustic Elegance" — Unique barn experience
+- 👨‍👩‍👧 "Family Run" — Personal, caring service
+
+**Feature Section (split layout):**
+- Left: Image of barn interior
+- Right: Text — "A Venue Unlike Any Other" with 4-5 bullet points about what makes Alford's Glen special
+
+**Testimonial Banner:**
+- Full-width blush background
+- 3 rotating testimonial quotes from couples (use placeholder quotes)
+
+**Instagram-style Photo Grid:**
+- 6 preview photos in masonry grid (use Unsplash URLs for rustic wedding photos)
+- "View Full Gallery →" link
+
+**CTA Banner:**
+- Background: Deep forest green
+- Text: "Your perfect day starts here."
+- Button: "Request a Date" (gold)
+
+**Footer:**
+- Logo
+- Address: 8772 Werger Road, Garrettsville, Ohio 44231
+- Phone: 330-527-2413
+- Email: alfordsglen@gmail.com
+- Nav links
+- Copyright 2025
+
+---
+
+### 2. RENTAL INFORMATION PAGE (rental.html)
+
+**Page Hero:** "Rental Information" with barn exterior photo background
+
+**Pricing Cards (3 tiers):**
+- Weekday Package — $X,XXX
+- Weekend Package — $X,XXX
+- All-Inclusive Package — $X,XXX
+Each card: list of included amenities, a CTA button
+
+**Venue Capacity Section:**
+- Ceremony: Up to 250 guests
+- Reception: Up to 200 guests
+- Outdoor ceremony space available
+
+**What's Included — Icon Grid:**
+- Tables & Chairs
+- Bridal Suite
+- Groom's Room
+- Parking
+- Catering Kitchen
+- Outdoor Ceremony Space
+- String Lights
+- Fire Pit
+Each with a small icon and short description
+
+**Rental Policies Section:**
+- Accordion/FAQ style
+- Questions like: "What time does the event end?", "Is catering provided?", "Can we bring our own alcohol?", etc.
+
+---
+
+### 3. PREFERRED VENDORS PAGE (vendors.html)
+
+**Page Hero:** "Our Preferred Vendors"
+
+**Vendor Category Tabs:**
+- Caterers | Photographers | Florists | DJs & Bands | Cake & Desserts | Hair & Makeup
+
+**Vendor Cards (3-4 per category):**
+- Vendor Name, Short description, Phone/Website link
+- Card with hover lift effect
+
+---
+
+### 4. GALLERY PAGE (gallery.html)
+
+**Page Hero:** "Photo Gallery"
+
+**Filter Tabs:** All | Ceremonies | Receptions | Decor | Desserts | Flowers
+
+**Masonry/Grid Gallery:**
+- 20+ images using Unsplash URLs (rustic wedding, barn interior, florals, cakes, etc.)
+- On image click → lightbox modal with arrow navigation
+
+**Lightbox:** 
+- Dark overlay, image centered, close button, prev/next arrows
+- Smooth fade transition
+
+---
+
+### 5. OUR COUPLES PAGE (couples.html)
+
+**Page Hero:** "Alford's Glen Couples"
+
+**Featured Couple Story (large card):**
+- Photo (Unsplash), Names, Date, Short story paragraph
+
+**Couple Grid (6 couples):**
+- Photo + Names + Wedding Date + Short quote
+- Each card links to their "full story" modal
+
+**Submit Your Story Section:**
+- Simple form: Names, Wedding Date, Message, Photo Upload
+- Submit button
+
+---
+
+### 6. HISTORY PAGE (history.html)
+
+**Page Hero:** "The History of Alford's Glen"
+
+**Timeline Layout (vertical):**
+- Each era/milestone as a timeline dot with year, heading, paragraph
+- Alternating left-right layout on desktop
+
+**Story Section:**
+- Full narrative about the property, the Alford family, the land's history
+- Interspersed with vintage-style framed photos (Unsplash historical/rural images)
+
+---
+
+### 7. CONTACT PAGE (contact.html)
+
+**Page Hero:** "Contact Us / Plan Your Day"
+
+**Split Layout:**
+- Left: Contact info
+  - Address with embedded Google Maps iframe (Garrettsville, Ohio)
+  - Phone: 330-527-2413
+  - Email: alfordsglen@gmail.com
+  - Office Hours
+- Right: Inquiry Form
+  - Full Name
+  - Email
+  - Phone
+  - Event Date (date picker)
+  - Estimated Guest Count (dropdown: Under 50 / 50-100 / 100-150 / 150-200 / 200+)
+  - How did you hear about us?
+  - Message / Special Requests
+  - [Send Inquiry] button (gold)
+
+**Form Validation:** All fields required, email format check, success message on submit
+
+---
+
+## ⚙️ TECHNICAL REQUIREMENTS
+
+### Responsive Design:
+- Mobile-first CSS
+- Hamburger menu on mobile (animated slide-in drawer)
+- All grids collapse to single column on mobile
+- Touch-friendly tap targets
+
+### Performance:
+- Lazy loading for all images (`loading="lazy"`)
+- CSS animations use `transform` and `opacity` only (GPU accelerated)
+- Minify inline CSS/JS where possible
+
+### Animations & Interactions:
+- Scroll-triggered fade-in animations (use Intersection Observer API)
+- Smooth page transitions
+- Hover effects on all cards (lift + shadow)
+- Smooth scroll for anchor links
+- Active nav link highlight
+
+### SEO & Meta:
+- Each page has unique `<title>` and `<meta description>`
+- Open Graph tags for social sharing
+- Structured data (JSON-LD) for LocalBusiness on contact page
+
+---
+
+## 📁 FILE STRUCTURE
+/alfords-glen-wedding/
+├── index.html
+├── rental.html
+├── vendors.html
+├── gallery.html
+├── couples.html
+├── history.html
+├── contact.html
+├── css/
+│   ├── style.css        (global styles, variables, typography)
+│   ├── nav.css          (navigation)
+│   ├── components.css   (cards, buttons, forms)
+│   └── animations.css   (scroll animations, transitions)
+├── js/
+│   ├── main.js          (nav, scroll effects, shared)
+│   ├── gallery.js       (lightbox, filter tabs)
+│   └── form.js          (contact form validation)
+└── assets/
+└── (use Unsplash URLs directly, no local images needed)
+---
+
+## 🖼️ IMAGE URLs TO USE (Unsplash — free, high quality)
+
+Use these direct Unsplash URLs throughout the site:
+
+- Barn exterior: https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1920
+- Barn interior ceremony: https://images.unsplash.com/photo-1519741497674-611481863552?w=1920
+- Wedding couple: https://images.unsplash.com/photo-1529636798458-92182e662485?w=1280
+- Floral decor: https://images.unsplash.com/photo-1510076857177-7470076d4098?w=1280
+- Wedding cake: https://images.unsplash.com/photo-1547637589-f54c34f5d7a4?w=1280
+- Table setting: https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1280
+- Rustic details: https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?w=1280
+- Night lights: https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1280
+- Garden ceremony: https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1280
+- Bride getting ready: https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=1280
+
+---
+
+## ✅ FINAL CHECKLIST
+
+Before finishing, make sure:
+- [ ] All 7 pages are complete and linked
+- [ ] Navigation works on all pages
+- [ ] Site is fully responsive (test at 375px, 768px, 1280px)
+- [ ] Gallery lightbox works
+- [ ] Contact form validates and shows success message
+- [ ] All animations are smooth (60fps)
+- [ ] Footer is consistent on all pages
+- [ ] No broken links or missing images
+- [ ] Color palette and fonts are consistent throughout
+- [ ] The site looks premium — NOT like a template
+
+---
+
+## 🚀 DEPLOYMENT
+
+After building, make sure the Replit project is set to **public** and the site runs on the Replit live URL so the client can preview it instantly via a shareable link.
+
+The final URL will be shared with the client as their preview. Make it impressive.

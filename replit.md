@@ -24,4 +24,14 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
+## Artifacts
+
+### Alford's Glen Wedding Barn (`artifacts/alfords-glen`)
+- **Type**: react-vite, presentation-first (no backend)
+- **Preview path**: `/`
+- **Description**: Complete 7-page wedding venue website for Alford's Glen Wedding Barn in Garrettsville, Ohio
+- **Pages**: Home, Rental Info (/rental), Vendors (/vendors), Gallery (/gallery), Our Couples (/couples), History (/history), Contact (/contact)
+- **Key features**: Cinematic hero with parallax, gallery lightbox, vendor tabs, history timeline, contact form with validation, sticky nav
+- **Design**: Warm Ivory + Accent Gold + Deep Forest Green palette, Playfair Display + Lato + Great Vibes fonts, Framer Motion animations
+
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
