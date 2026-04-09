@@ -3,6 +3,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
+import flower1 from "@assets/1374817537495658_1775749043508.jpg";
+import flower2 from "@assets/1374817587495653_1775749043610.jpg";
+import flower3 from "@assets/1374818014162277_1775749043655.jpg";
+import flower4 from "@assets/1374818370828908_1775749043703.jpg";
+import flower5 from "@assets/1374818574162221_1775749043754.jpg";
+import flower6 from "@assets/1374818824162196_1775749043810.jpg";
+import flower7 from "@assets/1374818854162193_1775749043865.jpg";
+import flower8 from "@assets/1374819324162146_1775749043917.jpg";
+import flower9 from "@assets/1374819710828774_1775749043970.jpg";
+import flower10 from "@assets/1390580469252698_1775749044025.jpg";
+import flower11 from "@assets/1390580609252684_1775749044074.jpg";
+import flower12 from "@assets/1390580772586001_1775749044136.jpg";
+
 import dessert1 from "@assets/1371201677857244_1775748741293.jpg";
 import dessert2 from "@assets/1374817337495678_1775748741422.jpg";
 import dessert3 from "@assets/1374818034162275_1775748741471.jpg";
@@ -26,8 +39,18 @@ export function Gallery() {
     { src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1280", category: "Ceremonies", alt: "Wedding ceremony" },
     { src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1280", category: "Ceremonies", alt: "Barn exterior" },
     { src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1280", category: "Ceremonies", alt: "Outdoor ceremony" },
-    { src: "https://images.unsplash.com/photo-1510076857177-7470076d4098?w=1280", category: "Flowers", alt: "Floral decor" },
-    { src: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=1280", category: "Flowers", alt: "Floral arrangement" },
+    { src: flower1, category: "Flowers", alt: "Orange and peach wildflower bouquet" },
+    { src: flower2, category: "Flowers", alt: "Cream dahlia close-up" },
+    { src: flower3, category: "Flowers", alt: "Coral dahlia table centerpiece with fairy lights" },
+    { src: flower4, category: "Flowers", alt: "Pink and coral dahlia bouquet" },
+    { src: flower5, category: "Flowers", alt: "Autumn floral arrangement in vase" },
+    { src: flower6, category: "Flowers", alt: "Table centerpiece with sunflowers and ferns" },
+    { src: flower7, category: "Flowers", alt: "Peach dahlia close-up" },
+    { src: flower8, category: "Flowers", alt: "Rustic boutonniere with feather and ribbon" },
+    { src: flower9, category: "Flowers", alt: "Greenery and fern entrance display" },
+    { src: flower10, category: "Flowers", alt: "Colorful floral arch with roses and dahlias" },
+    { src: flower11, category: "Flowers", alt: "White rose sweetheart table arrangement" },
+    { src: flower12, category: "Flowers", alt: "Mixed rose and hydrangea centerpiece" },
     { src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1280", category: "Receptions", alt: "Reception table setting" },
     { src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1280", category: "Receptions", alt: "Reception night lights" },
     { src: "https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?w=1280", category: "Decor", alt: "Rustic decor details" },
