@@ -1,70 +1,156 @@
 import { motion } from "framer-motion";
 
-export function History() {
-  const timeline = [
-    { year: "1847", title: "The Land is Settled", desc: "The first settlers arrived on this 50-acre parcel of northeastern Ohio wilderness, clearing space for a modest homestead." },
-    { year: "1892", title: "The Barn is Built", desc: "Local craftsmen raised the original timber-frame barn using white oak harvested directly from the property. The massive beams were hand-hewn and secured with wooden pegs." },
-    { year: "1940s", title: "A Working Farm", desc: "Three generations of the Alford family farmed this land through the mid-20th century, raising dairy cattle and cultivating the rolling fields." },
-    { year: "1978", title: "Nature Takes Over", desc: "As agricultural practices shifted, the farm was retired. The wooded acres were allowed to grow back to their natural state, creating the lush forest canopy that exists today." },
-    { year: "2012", title: "A New Vision", desc: "The current generation of the Alford family began restoring the historic barn, carefully honoring its heritage while updating it to host celebrations." },
-    { year: "2015", title: "First Wedding", desc: "Alford's Glen hosted its very first wedding, setting a new tradition of love, joy, and community gathering on these historic grounds." },
-    { year: "Today", title: "A Legacy of Love", desc: "Hundreds of couples have chosen these wooded acres as the backdrop for their forever. The land continues to be stewarded by the Alford family." }
-  ];
+const timeline = [
+  {
+    year: "Before 1811",
+    title: "The Original Land Grant",
+    desc: "The land that would become Alford's Glen was originally part of the holdings of Caleb Strong through the Ohio Company of Associates — one of the first organized efforts to settle the Northwest Territory."
+  },
+  {
+    year: "1811",
+    title: "The First House in Windham Township",
+    desc: "In March 1811, the Alford family erected the first house in Windham Township on Lot 84 — a 20-by-15-foot cabin settled by the Beckett Land Company, who had journeyed from Massachusetts to make a new life in northeastern Ohio. That very lot is the land on which Alford's Glen stands today."
+  },
+  {
+    year: "19th Century",
+    title: "A Family Takes Root",
+    desc: "Over the generations that followed, the Alford family worked and stewarded Lot 84, building a legacy tied to the rhythms of the land — the forests, fields, and seasons of Windham Township."
+  },
+  {
+    year: "20th Century",
+    title: "A Working Farm",
+    desc: "The property continued as a working farm through much of the 20th century. The barn, which now serves as the heart of the wedding venue, stood as the center of daily life across multiple generations of the Alford family."
+  },
+  {
+    year: "Recent Years",
+    title: "A New Vision for the Land",
+    desc: "Honoring the history of Lot 84, the Alford family began transforming the property into a wedding venue — preserving the original character of the land and its structures while opening the gates to couples who wanted something real, rooted, and beautiful."
+  },
+  {
+    year: "Today",
+    title: "Where Love Stories Begin",
+    desc: "Alford's Glen Wedding Barn now welcomes couples to celebrate one of life's most important days on 50 acres of wooded northeastern Ohio — land that has carried the weight of family, history, and belonging since 1811."
+  },
+];
 
+export function History() {
   return (
     <div className="w-full bg-background min-h-screen pb-24">
       {/* Hero */}
-      <section className="bg-secondary text-secondary-foreground pt-32 pb-16 text-center">
-        <motion.h1 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-serif text-white mb-4"
-        >
-          The History of Alford's Glen
-        </motion.h1>
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?w=1920')",
+          }}
+        />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="relative z-10 text-center px-4">
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="block text-4xl text-primary mb-3"
+            style={{ fontFamily: "'Great Vibes', cursive" }}
+          >
+            Our Story
+          </motion.span>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl md:text-5xl text-white font-serif"
+          >
+            The History of Alford's Glen
+          </motion.h1>
+        </div>
       </section>
 
-      <section className="py-16 container mx-auto px-4 max-w-4xl">
-        <div className="prose prose-stone lg:prose-lg mx-auto text-foreground/80 font-sans mb-24 text-center">
-          <p className="lead text-xl italic font-serif text-primary">
-            Every great venue has a story. Ours is written in hand-hewn oak and rooted in 50 acres of Ohio soil.
-          </p>
-          <p>
-            Long before it was a backdrop for elegant celebrations, Alford's Glen was a working family farm. The massive timber-frame structure that serves as our main reception space was built in the late 19th century by local craftsmen. If you look closely at the beams above the dance floor, you can still see the adze marks from where the wood was shaped by hand, cut from the very forest that surrounds it.
-          </p>
-          <p>
-            When our family decided to open the property to weddings, our primary goal was preservation. We wanted to share the magic of this secluded valley without losing its authentic character. Today, we are proud to steward this land and help couples add their own chapters to its long, rich history.
-          </p>
+      {/* Intro Narrative */}
+      <section className="py-20 container mx-auto px-4 max-w-3xl text-center">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="font-serif text-xl italic text-primary mb-8 leading-relaxed"
+        >
+          "Every acre of this land carries a name, a story, and a season."
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="text-muted-foreground leading-loose mb-6"
+        >
+          Alford's Glen sits on Lot 84 of Windham Township in Portage County, Ohio — the very parcel where the Alford family built the first house in the township back in March 1811. What began as a simple 20-by-15-foot cabin settled by the Beckett Land Company from Massachusetts has grown into something timeless: 50 wooded acres that have witnessed generations of family, seasons of hard work, and now, hundreds of wedding days.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="text-muted-foreground leading-loose"
+        >
+          When we decided to open this land to weddings, our goal was simple: share what we have without losing what makes it special. The barn, the firepit, the trees — they are not decorations. They are the inheritance of a family that has belonged to this place for more than two centuries.
+        </motion.p>
+      </section>
+
+      {/* Timeline */}
+      <section className="container mx-auto px-4 max-w-4xl">
+        <div className="text-center mb-16">
+          <h2 className="font-serif text-4xl text-foreground">A Timeline of Lot 84</h2>
         </div>
 
-        {/* Timeline */}
         <div className="relative">
-          {/* Center Line */}
-          <div className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-px bg-border -translate-x-1/2" />
+          {/* Center line */}
+          <div className="absolute left-[24px] md:left-1/2 top-0 bottom-0 w-px bg-border/60 -translate-x-1/2" />
 
-          <div className="space-y-12">
+          <div className="space-y-14">
             {timeline.map((item, i) => {
               const isEven = i % 2 === 0;
               return (
-                <div key={i} className={`flex flex-col md:flex-row relative ${isEven ? 'md:flex-row-reverse' : ''}`}>
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: i * 0.08 }}
+                  className={`flex flex-col md:flex-row relative ${isEven ? "md:flex-row-reverse" : ""}`}
+                >
                   {/* Dot */}
-                  <div className="absolute left-[20px] md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 mt-1.5 shadow-[0_0_0_4px_hsl(var(--background))]" />
-                  
+                  <div className="absolute left-[24px] md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 mt-2 shadow-[0_0_0_4px_hsl(var(--background))]" />
+
                   {/* Content */}
-                  <div className={`ml-12 md:ml-0 md:w-1/2 ${isEven ? 'md:pl-12' : 'md:pr-12 md:text-right'}`}>
-                    <div className="bg-white p-6 rounded-xl shadow-sm border border-border hover:border-primary/50 transition-colors">
-                      <span className="text-primary font-bold tracking-widest font-sans text-sm mb-2 block">
+                  <div className={`ml-14 md:ml-0 md:w-1/2 ${isEven ? "md:pl-14" : "md:pr-14 md:text-right"}`}>
+                    <div className="bg-white p-6 rounded-xl shadow-sm border border-border hover:border-primary/40 hover:-translate-y-1 transition-all duration-300">
+                      <span className="text-primary font-bold tracking-widest font-sans text-sm mb-2 block uppercase">
                         {item.year}
                       </span>
                       <h3 className="font-serif text-2xl text-foreground mb-3">{item.title}</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
         </div>
+      </section>
+
+      {/* Closing */}
+      <section className="mt-24 py-20 bg-secondary text-center px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <p className="text-white/70 font-serif text-lg italic max-w-2xl mx-auto">
+            Over 200 years after the Alford family first settled Lot 84, this land is still in the family — and still welcoming people home.
+          </p>
+        </motion.div>
       </section>
     </div>
   );
