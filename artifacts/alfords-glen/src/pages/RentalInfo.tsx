@@ -183,7 +183,7 @@ export function RentalInfo() {
                 Is catering provided?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-base">
-                We do not provide in-house catering, but we do have a fully-equipped catering kitchen available. You are welcome to choose any professional caterer — we also have a Preferred Vendors list to help.
+                We do not provide in-house catering. You are welcome to hire any professional caterer of your choice. We have a Preferred Vendors list available — contact us to receive it.
               </AccordionContent>
             </AccordionItem>
 

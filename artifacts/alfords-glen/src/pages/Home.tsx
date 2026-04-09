@@ -115,39 +115,36 @@ export function Home() {
             <ul className="space-y-6 font-sans text-foreground/80">
               <li className="flex items-start">
                 <span className="text-primary mr-3 mt-1 text-xl">❧</span>
-                <span>An authentic, lovingly restored timber-frame barn dating back to the late 1800s.</span>
+                <span>Up to 160 guests indoors — tables and chairs included.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-3 mt-1 text-xl">❧</span>
-                <span>Exclusive access to the property for your entire wedding day or weekend.</span>
+                <span>Friday setup access, day-of coordinator, security, and bartenders all included.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-3 mt-1 text-xl">❧</span>
-                <span>Breathtaking outdoor ceremony spaces nestled among ancient oaks.</span>
+                <span>Outdoor ceremony space at no extra charge.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-3 mt-1 text-xl">❧</span>
-                <span>A fully-equipped catering kitchen and dedicated bridal suite.</span>
+                <span>Private bridal apartment and groom's room for getting ready.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-3 mt-1 text-xl">❧</span>
-                <span>Warm, personalized service from our family to yours.</span>
+                <span>One simple price — $6,500 — with no hidden fees.</span>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      {/* Testimonial Banner */}
-      <section className="py-24 bg-accent/40 text-center relative">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <span className="text-6xl text-primary/30 font-serif absolute top-12 left-1/2 -translate-x-1/2">"</span>
-          <p className="text-2xl md:text-3xl font-serif text-foreground leading-relaxed relative z-10 italic mt-8 mb-8">
-            "Alford's Glen gave us a wedding day that felt like a dream — intimate, magical, and completely our own. The barn was glowing in the afternoon light."
+      {/* Simple CTA Banner */}
+      <section className="py-24 bg-accent/40 text-center">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <span className="font-script text-4xl text-primary mb-3 block">Garrettsville, Ohio</span>
+          <p className="text-2xl md:text-3xl font-serif text-foreground leading-relaxed">
+            8772 Werger Road — a place where memories are made and families come together.
           </p>
-          <div className="font-sans text-foreground/70 font-semibold tracking-wide uppercase text-sm">
-            — Sarah & Michael
-          </div>
         </div>
       </section>
 
