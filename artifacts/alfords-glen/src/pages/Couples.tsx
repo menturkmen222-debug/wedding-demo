@@ -5,6 +5,40 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Heart } from "lucide-react";
 
+import couple1 from "@assets/1371201744523904_1775788118432.jpg";
+import couple2 from "@assets/1371204167856995_1775788118521.jpg";
+import couple3 from "@assets/1374817457495666_1775788118568.jpg";
+import couple4 from "@assets/1374817817495630_1775788118682.jpg";
+import couple5 from "@assets/1374818184162260_1775788249830.jpg";
+import couple6 from "@assets/1374818247495587_1775788250072.jpg";
+import couple7 from "@assets/1374818650828880_1775788250180.jpg";
+import couple8 from "@assets/1374819184162160_1775788250390.jpg";
+import couple9 from "@assets/1374819304162148_1775788330212.jpg";
+import couple10 from "@assets/1382840930026652_1775788330365.jpg";
+import couple11 from "@assets/1382840976693314_1775788407590.jpg";
+import couple12 from "@assets/1382841036693308_1775788407828.jpg";
+import couple13 from "@assets/1390580155919396_1775788407984.jpg";
+import couple14 from "@assets/1390580205919391_1775788408075.jpg";
+import couple15 from "@assets/1390580509252694_1775788408118.jpg";
+
+const photos = [
+  { src: couple1,  alt: "Wedding party processional along stone path with hydrangeas" },
+  { src: couple2,  alt: "Couple embracing in sunlit forest" },
+  { src: couple3,  alt: "Bride and groom exchanging vows at outdoor arbor in fall" },
+  { src: couple4,  alt: "Bride and groom smiling inside barn with fairy lights" },
+  { src: couple5,  alt: "Bride and groom entering barn reception with string lights" },
+  { src: couple6,  alt: "Couple forehead to forehead in forest sunlight" },
+  { src: couple7,  alt: "Groom helping bride arrange train on mossy rocks in forest" },
+  { src: couple8,  alt: "Emotional bride walking down aisle with bouquet" },
+  { src: couple9,  alt: "Couple sharing a kiss on rocky ledge in forest" },
+  { src: couple10, alt: "Couple smiling by large tree trunk in autumn woods" },
+  { src: couple11, alt: "Bride and groom portrait on wooded lane" },
+  { src: couple12, alt: "Couple under fall arbor with hydrangeas and stone path" },
+  { src: couple13, alt: "Bride with wildflower bouquet outside the barn" },
+  { src: couple14, alt: "Couple inside warm barn with barrel tables and fairy lights" },
+  { src: couple15, alt: "Sparkler exit kiss at night" },
+];
+
 export function Couples() {
   return (
     <div className="w-full bg-background min-h-screen">
@@ -27,22 +61,44 @@ export function Couples() {
         </motion.p>
       </section>
 
-      {/* Coming Soon */}
-      <section className="py-32 container mx-auto px-4 text-center max-w-2xl">
+      {/* Photo Grid */}
+      <section className="py-20 container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-14"
         >
-          <div className="w-20 h-20 rounded-full bg-accent/30 flex items-center justify-center text-primary mx-auto mb-8">
-            <Heart size={36} />
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Heart size={22} className="text-primary fill-primary/30" />
+            <span className="font-script text-4xl text-primary">Moments We Treasure</span>
+            <Heart size={22} className="text-primary fill-primary/30" />
           </div>
-          <h2 className="text-3xl font-serif text-foreground mb-4">Couple photos coming soon</h2>
-          <p className="text-muted-foreground font-sans leading-relaxed">
-            Were you married at Alford's Glen? We'd love to feature your story and photos here. Use the form below to share your special day with us.
+          <p className="text-muted-foreground font-sans max-w-lg mx-auto">
+            A glimpse into the beautiful weddings that have taken place here at Alford's Glen Wedding Barn.
           </p>
         </motion.div>
+
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+          {photos.map((photo, i) => (
+            <motion.div
+              key={photo.src}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: (i % 6) * 0.08 }}
+              className="break-inside-avoid rounded-xl overflow-hidden shadow-md group"
+            >
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                loading="lazy"
+                className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </motion.div>
+          ))}
+        </div>
       </section>
 
       {/* Share Your Story Form */}
