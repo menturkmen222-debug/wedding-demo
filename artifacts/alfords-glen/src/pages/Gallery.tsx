@@ -34,6 +34,24 @@ import dessert15 from "@assets/1390580785919333_1775748742276.jpg";
 import dessert16 from "@assets/1390580865919325_1775748742327.jpg";
 import dessert17 from "@assets/1390580925919319_1775748742386.jpg";
 
+import decor1 from "@assets/1374817274162351_1775787207482.jpg";
+import decor2 from "@assets/1374817280829017_1775787207582.jpg";
+import decor3 from "@assets/1374817687495643_1775787207629.jpg";
+import decor4 from "@assets/1374817767495635_1775787207669.jpg";
+import decor5 from "@assets/1374817787495633_1775787243485.jpg";
+import decor6 from "@assets/1374817844162294_1775787243658.jpg";
+import decor7 from "@assets/1374818150828930_1775787243852.jpg";
+import decor8 from "@assets/1374818300828915_1775787243929.jpg";
+import decor9 from "@assets/1374818350828910_1775787295967.jpg";
+import decor10 from "@assets/1374818417495570_1775787296173.jpg";
+import decor11 from "@assets/1374819610828784_1775787296287.jpg";
+import decor12 from "@assets/1390580189252726_1775787296395.jpg";
+import decor13 from "@assets/1390580429252702_1775787396562.jpg";
+import decor14 from "@assets/1390580575919354_1775787396693.jpg";
+import decor15 from "@assets/1390580679252677_1775787396913.jpg";
+import decor16 from "@assets/1390580822585996_1775787397008.jpg";
+import decor17 from "@assets/1390580945919317_1775787436705.jpg";
+
 export function Gallery() {
   const images = [
     { src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1280", category: "Ceremonies", alt: "Wedding ceremony" },
@@ -53,7 +71,23 @@ export function Gallery() {
     { src: flower12, category: "Flowers", alt: "Mixed rose and hydrangea centerpiece" },
     { src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1280", category: "Receptions", alt: "Reception table setting" },
     { src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1280", category: "Receptions", alt: "Reception night lights" },
-    { src: "https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?w=1280", category: "Decor", alt: "Rustic decor details" },
+    { src: decor1, category: "Decor", alt: "Outdoor wooden arbor with fall foliage" },
+    { src: decor2, category: "Decor", alt: "Silver floral vase holder close-up" },
+    { src: decor3, category: "Decor", alt: "Reserved sign on outdoor ceremony chair" },
+    { src: decor4, category: "Decor", alt: "Table 12 centerpiece with zinnia and fern" },
+    { src: decor5, category: "Decor", alt: "Stone aisle pathway leading to arbor" },
+    { src: decor6, category: "Decor", alt: "Drinks are on us bar sign with flowers" },
+    { src: decor7, category: "Decor", alt: "Rustic lantern with mushroom and pinecone decor" },
+    { src: decor8, category: "Decor", alt: "Guest book cooler The Baileys Est. 2025" },
+    { src: decor9, category: "Decor", alt: "Reception hall setup with green tablecloths" },
+    { src: decor10, category: "Decor", alt: "Seed packet favor with table number" },
+    { src: decor11, category: "Decor", alt: "Outdoor ceremony area with hydrangeas" },
+    { src: decor12, category: "Decor", alt: "Welcome table with guest book and signs" },
+    { src: decor13, category: "Decor", alt: "Engraved cutting board Meiner Josh & Kenzie" },
+    { src: decor14, category: "Decor", alt: "Bar setup with lemonade and wedding signs" },
+    { src: decor15, category: "Decor", alt: "Floating candle centerpiece with baby's breath" },
+    { src: decor16, category: "Decor", alt: "Head table with fairy light backdrop" },
+    { src: decor17, category: "Decor", alt: "I do too napkin with dog photo" },
     { src: dessert1, category: "Desserts", alt: "Wedding cake with blue lights" },
     { src: dessert2, category: "Desserts", alt: "Cupcake dessert table display" },
     { src: dessert3, category: "Desserts", alt: "Dessert wagon with naked cake" },
