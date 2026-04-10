@@ -153,14 +153,20 @@ export function Gallery() {
   return (
     <div className="w-full bg-background min-h-screen pb-24">
       {/* Hero */}
-      <section className="bg-secondary text-secondary-foreground pt-32 pb-16 text-center">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-serif text-white mb-4"
-        >
-          Photo Gallery
-        </motion.h1>
+      <section className="relative pt-32 pb-20 text-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={ceremony3} alt="" className="w-full h-full object-cover object-center" />
+          <div className="absolute inset-0 bg-black/55" />
+        </div>
+        <div className="relative z-10">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-4xl md:text-5xl font-serif text-white mb-4"
+          >
+            Photo Gallery
+          </motion.h1>
+        </div>
       </section>
 
       <div className="container mx-auto px-4 mt-12">

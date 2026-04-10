@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import vendorHero from "@assets/1374818350828910_1775787295967.jpg";
 import { Button } from "@/components/ui/button";
 import { UtensilsCrossed, Camera, Flower2, Music, Cake, Sparkles } from "lucide-react";
 
@@ -16,7 +17,12 @@ export function Vendors() {
   return (
     <div className="w-full bg-background min-h-screen pb-24">
       {/* Hero */}
-      <section className="bg-secondary text-secondary-foreground pt-32 pb-16 text-center">
+      <section className="relative pt-32 pb-20 text-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={vendorHero} alt="" className="w-full h-full object-cover object-center" />
+          <div className="absolute inset-0 bg-black/55" />
+        </div>
+        <div className="relative z-10">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,6 +38,7 @@ export function Vendors() {
         >
           We have a curated list of local professionals who know Alford's Glen and share our commitment to making your day special. Contact us to receive our full preferred vendor list.
         </motion.p>
+        </div>
       </section>
 
       <div className="container mx-auto px-4 max-w-5xl mt-16">

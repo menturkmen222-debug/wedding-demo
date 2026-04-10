@@ -43,22 +43,28 @@ export function Couples() {
   return (
     <div className="w-full bg-background min-h-screen">
       {/* Hero */}
-      <section className="bg-secondary text-secondary-foreground pt-32 pb-16 text-center">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-serif text-white mb-4"
-        >
-          Our Couples
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="text-white/80 max-w-xl mx-auto px-4 font-sans"
-        >
-          Every love story celebrated at Alford's Glen is unique. We are honored to be part of your chapter.
-        </motion.p>
+      <section className="relative pt-32 pb-20 text-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={couple6} alt="" className="w-full h-full object-cover object-top" />
+          <div className="absolute inset-0 bg-black/55" />
+        </div>
+        <div className="relative z-10">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-4xl md:text-5xl font-serif text-white mb-4"
+          >
+            Our Couples
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-white/80 max-w-xl mx-auto px-4 font-sans"
+          >
+            Every love story celebrated at Alford's Glen is unique. We are honored to be part of your chapter.
+          </motion.p>
+        </div>
       </section>
 
       {/* Photo Grid */}

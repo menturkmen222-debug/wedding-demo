@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, Users, CalendarDays, Home, Shield, Flame, Utensils, Car, Music, Trees } from "lucide-react";
+import rentalHero from "@assets/1374817457495666_1775788118568.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -30,7 +31,7 @@ export function RentalInfo() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1920')",
+            backgroundImage: `url('${rentalHero}')`,
           }}
         />
         <div className="absolute inset-0 bg-black/50" />

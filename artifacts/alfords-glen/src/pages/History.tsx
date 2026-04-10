@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import historyHero from "@assets/1374819547495457_1775787714369.jpg";
 
 const timeline = [
   {
@@ -41,7 +42,7 @@ export function History() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?w=1920')",
+            backgroundImage: `url('${historyHero}')`,
           }}
         />
         <div className="absolute inset-0 bg-black/55" />
