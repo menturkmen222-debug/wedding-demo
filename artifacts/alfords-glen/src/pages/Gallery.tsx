@@ -34,6 +34,16 @@ import dessert15 from "@assets/1390580785919333_1775748742276.jpg";
 import dessert16 from "@assets/1390580865919325_1775748742327.jpg";
 import dessert17 from "@assets/1390580925919319_1775748742386.jpg";
 
+import ceremony1 from "@assets/No_photo_description_available._1_(1)_1775787557638.jpg";
+import ceremony2 from "@assets/No_photo_description_available._1_1775787557737.jpg";
+import ceremony3 from "@assets/Hitube_DauUKxC3ny_2026_04_09_11_47_11_1775787557776.jpg";
+import ceremony4 from "@assets/Hitube_Zzjw4XyyWj_2026_04_09_10_23_16_1775787557816.jpg";
+import ceremony5 from "@assets/Hitube_xC44CPSs9t_2026_04_09_10_23_14_1775787557864.jpg";
+import ceremony6 from "@assets/Hitube_XCPBvlTQWq_2026_04_09_10_18_59_1775787557912.jpg";
+import ceremony7 from "@assets/Hitube_ylwoL9AVpE_2026_04_09_10_17_52_1775787557963.jpg";
+import ceremony8 from "@assets/1374819390828806_1775787714269.jpg";
+import ceremony9 from "@assets/1374819547495457_1775787714369.jpg";
+
 import decor1 from "@assets/1374817274162351_1775787207482.jpg";
 import decor2 from "@assets/1374817280829017_1775787207582.jpg";
 import decor3 from "@assets/1374817687495643_1775787207629.jpg";
@@ -54,9 +64,15 @@ import decor17 from "@assets/1390580945919317_1775787436705.jpg";
 
 export function Gallery() {
   const images = [
-    { src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1280", category: "Ceremonies", alt: "Wedding ceremony" },
-    { src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1280", category: "Ceremonies", alt: "Barn exterior" },
-    { src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1280", category: "Ceremonies", alt: "Outdoor ceremony" },
+    { src: ceremony1, category: "Ceremonies & Receptions", alt: "Wedding party family photo outdoors" },
+    { src: ceremony2, category: "Ceremonies & Receptions", alt: "Groom and groomsmen inside barn with fairy lights" },
+    { src: ceremony3, category: "Ceremonies & Receptions", alt: "Groomsmen playing pool in the loft" },
+    { src: ceremony4, category: "Ceremonies & Receptions", alt: "Couple dancing inside barn reception" },
+    { src: ceremony5, category: "Ceremonies & Receptions", alt: "Bride and groom sparkler exit kiss" },
+    { src: ceremony6, category: "Ceremonies & Receptions", alt: "Wedding party in forest ceremony" },
+    { src: ceremony7, category: "Ceremonies & Receptions", alt: "Bride arriving on Kubota UTV" },
+    { src: ceremony8, category: "Ceremonies & Receptions", alt: "First dance inside barn with white drapes and string lights" },
+    { src: ceremony9, category: "Ceremonies & Receptions", alt: "Outdoor ceremony with arbor in fall foliage" },
     { src: flower1, category: "Flowers", alt: "Orange and peach wildflower bouquet" },
     { src: flower2, category: "Flowers", alt: "Cream dahlia close-up" },
     { src: flower3, category: "Flowers", alt: "Coral dahlia table centerpiece with fairy lights" },
@@ -69,8 +85,6 @@ export function Gallery() {
     { src: flower10, category: "Flowers", alt: "Colorful floral arch with roses and dahlias" },
     { src: flower11, category: "Flowers", alt: "White rose sweetheart table arrangement" },
     { src: flower12, category: "Flowers", alt: "Mixed rose and hydrangea centerpiece" },
-    { src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1280", category: "Receptions", alt: "Reception table setting" },
-    { src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1280", category: "Receptions", alt: "Reception night lights" },
     { src: decor1, category: "Decor", alt: "Outdoor wooden arbor with fall foliage" },
     { src: decor2, category: "Decor", alt: "Silver floral vase holder close-up" },
     { src: decor3, category: "Decor", alt: "Reserved sign on outdoor ceremony chair" },
@@ -153,7 +167,7 @@ export function Gallery() {
         <div className="flex justify-center mb-12">
           <Tabs defaultValue="All" onValueChange={setFilter} className="w-full max-w-3xl">
             <TabsList className="flex flex-wrap h-auto justify-center bg-transparent gap-2">
-              {["All", "Ceremonies", "Receptions", "Decor", "Desserts", "Flowers"].map((cat) => (
+              {["All", "Ceremonies & Receptions", "Decor", "Desserts", "Flowers"].map((cat) => (
                 <TabsTrigger
                   key={cat}
                   value={cat}
