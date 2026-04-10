@@ -3,6 +3,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { TreePine, Home as HomeIcon, Heart } from "lucide-react";
 
+import homeMemory1 from "@assets/1382840976693314_1775788407590.jpg";
+import homeMemory2 from "@assets/1374819304162148_1775788330212.jpg";
+import homeMemory3 from "@assets/1374817817495630_1775788118682.jpg";
+import homeMemory4 from "@assets/1374818184162260_1775788249830.jpg";
+import homeMemory5 from "@assets/1374819390828806_1775787714269.jpg";
+
 export function Home() {
   return (
     <div className="w-full">
@@ -158,19 +164,19 @@ export function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[300px]">
             <div className="lg:col-span-2 lg:row-span-2 relative rounded-xl overflow-hidden group">
-              <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=1280" alt="Couple" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={homeMemory1} alt="Bride and groom portrait on wooded lane" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
             <div className="relative rounded-xl overflow-hidden group">
-              <img src="https://images.unsplash.com/photo-1510076857177-7470076d4098?w=1280" alt="Details" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={homeMemory2} alt="Couple sharing a kiss on mossy rocks in forest" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
             <div className="relative rounded-xl overflow-hidden group">
-              <img src="https://images.unsplash.com/photo-1547637589-f54c34f5d7a4?w=1280" alt="Cake" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={homeMemory3} alt="Bride and groom smiling inside barn" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
             <div className="relative rounded-xl overflow-hidden group">
-              <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1280" alt="Reception" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={homeMemory4} alt="Couple entering barn reception" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
             <div className="lg:col-span-2 relative rounded-xl overflow-hidden group">
-              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1280" alt="Party" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={homeMemory5} alt="First dance inside barn with white drapes and string lights" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
           </div>
           
